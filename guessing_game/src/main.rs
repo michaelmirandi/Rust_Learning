@@ -43,7 +43,7 @@ fn main() {
         // u32 is unsigned 32 integer
         // parse method also returns a result type... so you can use the expect method off of it...
         // instead of using expect, you can use a function after to handle the enum routing
-        let guess: u32 = guess.trim().parse( {
+        let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             // match all errors using the _ param
             Err(_) => continue,

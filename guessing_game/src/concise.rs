@@ -1,6 +1,6 @@
-use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
+use rand::Rng;
 
 // key concepts: library::method
 // type::new()

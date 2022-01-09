@@ -1,0 +1,1 @@
+C:\Users\mmira\OneDrive\Desktop\Misc\Rust\structs\target\debug\structs.exe: C:\Users\mmira\OneDrive\Desktop\Misc\Rust\structs\src\defining_and_instantiating.rs C:\Users\mmira\OneDrive\Desktop\Misc\Rust\structs\src\main.rs
