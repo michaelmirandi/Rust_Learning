@@ -1,4 +1,4 @@
-# rust_learning
+# Rust Learning
 
 A repo going through the syntax & logic of the Rust language.
 
