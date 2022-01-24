@@ -29,7 +29,7 @@ pub fn one_function() {
     // similar to JS, you can unpack a struct using the .. operator
     // in JS its ...
     // unlike JS, unpackiing will not overrite something if you declare it within the struct
-    let mut new_user = User {
+    let new_user = User {
         email: String::from("anotheremail@yadigg.edu"),
         username: String::from("anotherusername"),
         ..me
@@ -63,6 +63,7 @@ pub fn one_function() {
     */
 }
 
+// below won't work because you are need to learn about lifetimes (CH10)
 fn build_user(email: String, username: String) -> User {
     // if the names are 1:1 you can just put them in the struct
     User {
