@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 # same carots in solidity... allow you to round up to the next version of the crate
-rand = "0.8.4"
+rand = "^0.8.4"
