@@ -1,4 +1,5 @@
 mod defining_an_enum;
+mod match_control;
 
 fn main() {
     // overview
@@ -12,4 +13,5 @@ fn main() {
         Enums can be user defined
     */
     defining_an_enum::first();
+    match_control::second();
 }
