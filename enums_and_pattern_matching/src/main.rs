@@ -1,5 +1,6 @@
 mod defining_an_enum;
 mod match_control;
+mod if_let;
 
 fn main() {
     // overview
@@ -14,4 +15,5 @@ fn main() {
     */
     defining_an_enum::first();
     match_control::second();
+    if_let::third();
 }
