@@ -1,0 +1,1 @@
+C:\Users\mmira\OneDrive\Desktop\Misc\Rust\managing_projects\target\debug\managing_projects.exe: C:\Users\mmira\OneDrive\Desktop\Misc\Rust\managing_projects\src\lib.rs C:\Users\mmira\OneDrive\Desktop\Misc\Rust\managing_projects\src\main.rs
