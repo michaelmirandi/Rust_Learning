@@ -82,3 +82,63 @@ pub fn eat_at_restaurant() {
     let order_2 = back_of_house::Appetizer::Soup;
 
 }
+
+// it is possible to bring a path into scope so you don't 
+// have to repeat yourself all the time
+/*
+    Use keyword
+    scopes check privacy as well
+*/
+
+use crate::front_of_house::hosting;
+// can bring function into scope as well
+// use crate::front_of_house::hosting::add_to_waitlist();
+// using relative instead of absolute
+// use self::front_of_house::hosting;
+pub fn eat_using_scope() {
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
+}
+
+/*
+    When bringing in structs, enums, and other items
+    use the full path, unless there are two items with the same
+    name
+*/
+use std::collections::HashMap;
+use std::fmt;
+use std::io;
+
+// fn func_1() -> fmt::Result {
+
+// }
+
+// fn func_2() -> io::Result {
+
+// }
+
+pub fn use_hashmap() {
+    let mut map = HashMap::new();
+    map.insert(1, 2);
+}
+
+// you can also provide new names using the as keyword
+// similar to JS, but use as and use keywords...
+use std::fmt::Result as FmtResult;
+use std::io::Result as IoResult;
+
+// re export names with pub use
+// scopes are private by default
+// but you can make them public
+
+// external code can now call and use this module
+/*
+Useful when the structure of your code is not how 
+users will call it when importing it.
+*/
+pub use crate::front_of_house::serving;
+
+/*
+
+*/
